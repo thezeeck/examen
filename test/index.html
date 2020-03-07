@@ -29,13 +29,13 @@
     </section>
     <div class="container">
         <div class="notification">
-            let newDate = <strong>"1/31/2020"</strong>.customFormatDate();<br> newDate = <strong>"20200131"</strong>
+            let newDate = <strong>"1/31/2020"</strong>.customFormatDate();<br> newDate = <strong id="asAPrototype"></strong>
         </div>
     </div>
     <div class="separator"></div>
     <div class="container">
         <div class="notification">
-            let newDate = customFormatDate(<strong>"10/9/2020"</strong>);<br> newDate = <strong>"20201009"</strong>
+            let newDate = customFormatDate(<strong>"10/9/2020"</strong>);<br> newDate = <strong id="asAFunction"></strong>
         </div>
     </div>
     <div class="separator"></div>
@@ -49,8 +49,8 @@
     </footer>
     <script>
         document.addEventListener("DOMContentLoaded", event => {
-            console.log("1/31/2020".customFormatDate());
-            console.log(customFormatDate("1/31/2020"));
+            document.querySelector("#asAPrototype").innerHTML = `"${"1/31/2020".customFormatDate()}"`;
+            document.querySelector("#asAFunction").innerHTML = `"${customFormatDate("10/9/2020")}"`;
         });
     </script>
 </body>
