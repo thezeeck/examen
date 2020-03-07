@@ -1,6 +1,6 @@
 String.prototype.customFormatDate = function() {
     let oldDate = this,
-        pattern = /^([1-9]|0[1-9]|1[012])[- \/.]([1-9]|0[1-9]|[12][0-9]|3[01])[- \/.](19|20)\d\d$/;
+        pattern = /^([1-9]|0[1-9]|1[012])[\/]([1-9]|0[1-9]|[12][0-9]|3[01])[\/](19|20)\d\d$/;
 
     if (pattern.test(oldDate)) {
         oldDate = oldDate.split("/");
