@@ -1,5 +1,5 @@
 # Exámen
-Esta librería permite ingresar una fecha con el formato **MM/DD/YYYY** y retorna un string con el formato **YYYYMMDD**
+Esta librería permite ingresar una fecha con el formato **MM/DD/YYYY** y devuelve un string con el formato **YYYYMMDD**
 
 ## Ejemplos:
 let newDate = **"1/31/2020"**.customFormatDate();\
